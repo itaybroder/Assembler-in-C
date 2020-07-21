@@ -80,28 +80,32 @@ void handle_line(char line[], dict_t **dict, int line_number){
 }
 
 char **split_line(char line[]){
-    char newString[10][10]; 
-
+    char **newString = (char **)malloc(sizeof(char *) * 10); 
+    
     int i,j,ctr;
  
     j=0; ctr=0;
+     newString[0] = (char*)malloc(10*sizeof(char));
     for(i=0;i<=(strlen(line));i++)
     {
          /**if space or NULL found, assign NULL into newString[ctr]**/
         if(line[i]==' '||line[i]=='\0')
         {
+            
             newString[ctr][j]='\0';
             ctr++;  /**or next word**/
             j=0;    /**for next word, init index to 0**/
+            newString[ctr] = (char*)malloc(10*sizeof(char));
         }
         else
         {
+           
             newString[ctr][j]=line[i];
             j++;
         }
     }
-
-    return newString[0][0];
+    
+    return newString;
 }
 
 char **splittt(){
@@ -111,6 +115,7 @@ char **splittt(){
 
 }
 int main(int argc, char *argv[]){
+    printf("aaa");
     /*Looping through the assembly files*/
     int i;
     for(i = 1; i<argc; i++){
