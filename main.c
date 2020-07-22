@@ -24,7 +24,7 @@ void handle_assembly_files(char fileName[]){
 
     read_assambely_lines(inputFile, dict);
 
-    int line_number = (int)getItem(dict, "MAIN");
+    int line_number = (int)getItem(dict, "END");
 	printf("%d", line_number);
 
 	/*Closing the files*/
@@ -115,7 +115,6 @@ char **splittt(){
 
 }
 int main(int argc, char *argv[]){
-    printf("aaa");
     /*Looping through the assembly files*/
     int i;
     for(i = 1; i<argc; i++){
