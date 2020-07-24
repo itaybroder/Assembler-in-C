@@ -24,7 +24,7 @@ void handle_assembly_files(char fileName[]){
 
     read_assambely_lines(inputFile, dict);
 
-    int line_number = (int)getItem(*dict, "END:");
+    int line_number = (int)getItem(*dict, "END");
 	printf("%d", line_number);
 
 	/*Closing the files*/
