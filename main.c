@@ -24,7 +24,7 @@ void handle_assembly_files(char fileName[]){
 
     read_assambely_lines(inputFile, dict);
 
-    int line_number = (int)getItem(dict, "END:");
+    int line_number = (int)getItem(*dict, "END:");
 	printf("%d", line_number);
 
 	/*Closing the files*/
@@ -54,6 +54,8 @@ char *substring(char *string, int position, int length)
  
    return pointer;
 }
+
+/*This function adds to the dict*/
 void extract_label(char line[], dict_t **dict, int line_number){
     char **words;
     words = split_line(line);
