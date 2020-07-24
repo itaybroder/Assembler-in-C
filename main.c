@@ -61,8 +61,8 @@ void extract_label(char line[], dict_t **dict, int line_number){
     words = split_line(line);
 
     if(words[0][strlen(words[0])-1] == ':'){
-        addItem(dict, words[0], line_number);
-        /*substring(words[0], 0, strlen(words[0])-1)*/
+        addItem(dict, substring(words[0], 0, strlen(words[0])-1), line_number);
+    
     }
 }
 
