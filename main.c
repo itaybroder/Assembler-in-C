@@ -63,7 +63,8 @@ void read_assambely_lines(FILE *assemblyFile, dict_t **dict, params *p){
         line_number++;
     }
 
-    prinf("%d", p->IC);
+    printf("%d", p->IC);
+
 }
 
 /*this method will execute a singal line each time from the input assembly file*/
