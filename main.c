@@ -4,7 +4,7 @@
 
 /*-------function prototype------*/
 void handle_assembly_files(char[]);
-void read_assambely_lines(FILE*, dict_t**);
+void read_assambely_lines(FILE*, dict_t**, params *p);
 void handle_line(char[], dict_t **, int);
 char **split_line(char line[]);
 /*-------------------------------*/
@@ -15,7 +15,8 @@ void handle_assembly_files(char fileName[]){
     FILE *inputFile;
 	
     dict_t **dict = dictAlloc();
-    
+    params *p;
+    p->IC = 100;
 
     inputFile = fopen(fileName, "r");
     if(inputFile == NULL)
@@ -24,7 +25,7 @@ void handle_assembly_files(char fileName[]){
         exit(1);
     }
 
-    read_assambely_lines(inputFile, dict);
+    read_assambely_lines(inputFile, dict, p);
 
     int line_number = (int)getItem(*dict, "END");
 	printf("%d", line_number);
@@ -53,7 +54,7 @@ void extract_label(char line[], dict_t **dict, int line_number){
 }
 
 /*This function gets an assembey file pointer and loop over the content of the file*/
-void read_assambely_lines(FILE *assemblyFile, dict_t **dict){
+void read_assambely_lines(FILE *assemblyFile, dict_t **dict, params *p){
     char line[MAX_STRING_LENGTH];
     int line_number=1;
     /*Reading input untill stop or EOF*/
@@ -61,6 +62,8 @@ void read_assambely_lines(FILE *assemblyFile, dict_t **dict){
         handle_line(line, dict, line_number);
         line_number++;
     }
+
+    prinf("%d", p->IC);
 }
 
 /*this method will execute a singal line each time from the input assembly file*/
