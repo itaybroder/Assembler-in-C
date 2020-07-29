@@ -16,7 +16,7 @@ void handle_assembly_files(char fileName[]){
 	
     dict_t **dict = dictAlloc();
     params *p;
-    p->IC = 100;
+    *p->IC = 100;
 
     inputFile = fopen(fileName, "r");
     if(inputFile == NULL)
