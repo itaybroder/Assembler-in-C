@@ -62,7 +62,7 @@ void read_assambely_lines(FILE *assemblyFile, dict_t **dict){
 }
 
 /*this method will execute a singal line each time from the input assembly file*/
-void handle_line(char line[], dict_t **dict, int line_number){
+void handle_line(char line[], dict_t **dict, int line_number){  
     extract_label(line, dict, line_number);
 }
 
