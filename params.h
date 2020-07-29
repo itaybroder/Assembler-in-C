@@ -6,7 +6,7 @@ enum opcode{
     ADD=0b000010000000000000000000,
     SUB=0b000010000000000000000000,
     LEA=0b000000000000000000000000
-}
+};
 
 typedef struct params_struct {
     int IC;
