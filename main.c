@@ -4,7 +4,7 @@
 
 /*-------function prototype------*/
 void handle_assembly_files(char[]);
-void read_assambely_lines(FILE*, dict_t**, params p);
+void read_assambely_lines(FILE*, dict_t**, params *p);
 void handle_line(char[], dict_t **, int);
 char **split_line(char line[]);
 /*-------------------------------*/
@@ -15,9 +15,9 @@ void handle_assembly_files(char fileName[]){
     FILE *inputFile;
 	
     dict_t **dict = dictAlloc();
-    params p;
-    p.IC = 100;
-
+    params *p = (params *)malloc(sizeof(params));
+    p->IC = 100;
+    p->DC = 0;
     inputFile = fopen(fileName, "r");
     if(inputFile == NULL)
     {
@@ -54,7 +54,7 @@ void extract_label(char line[], dict_t **dict, int line_number){
 }
 
 /*This function gets an assembey file pointer and loop over the content of the file*/
-void read_assambely_lines(FILE *assemblyFile, dict_t **dict, params p){
+void read_assambely_lines(FILE *assemblyFile, dict_t **dict, params *p){
     char line[MAX_STRING_LENGTH];
     int line_number=1;
     /*Reading input untill stop or EOF*/
@@ -63,7 +63,7 @@ void read_assambely_lines(FILE *assemblyFile, dict_t **dict, params p){
         line_number++;
     }
 
-    printf("%d", p.IC);
+    printf("%d", p->IC);
 
 }
 
