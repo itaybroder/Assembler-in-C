@@ -1,6 +1,6 @@
 #include "node.h"
 
-void add(line_node *head, line_node *node){
+void addLineNode(line_node *head, line_node *node){
     line_node *runner = head;
     while (runner->next != NULL)
     {
@@ -8,4 +8,19 @@ void add(line_node *head, line_node *node){
     }
     
     runner->next = node;
+}
+
+line_node *getByIndex(line_node *head, int index){
+    line_node *runner = head->next;
+    int i = 0;
+    while (runner != NULL)
+    {
+        if(i == index){
+            return runner;
+        }
+        runner = runner->next;
+        i++;
+    }
+    
+    return NULL;
 }

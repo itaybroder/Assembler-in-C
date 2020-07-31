@@ -9,15 +9,34 @@ void handle_line(char[], dict_t **, int);
 char **split_line(char line[]);
 /*-------------------------------*/
 
+params *init_params(){
+    params *p = (params *)malloc(sizeof(params));
+    p->IC = 100;
+    p->DC = 0;
+    p->line_node_head = (line_node *)malloc(sizeof(line_node));
+    p->data_node_head = (data_node *)malloc(sizeof(data_node));
+    return p;
+}
+
 /*This fucntion gets a file name from the main method and open the file and send it to the read_assembly_line() fucntion which deals with the file content*/
 void handle_assembly_files(char fileName[]){
     /*initialize the input stream to be the assembly file*/
     FILE *inputFile;
 	
     dict_t **dict = dictAlloc();
-    params *p = (params *)malloc(sizeof(params));
-    p->IC = 100;
-    p->DC = 0;
+    
+    params *p = init_params();
+
+    line_node *n0 = (line_node *)malloc(sizeof(line_node));
+    n0->code = 0b0;
+    line_node *n01 = (line_node *)malloc(sizeof(line_node));
+    n1->code = 0b110;
+    line_node *n2 = (line_node *)malloc(sizeof(line_node));
+    n2->code = 0b10;
+
+    addLineNode(p->line_node_head, n0);
+    addLineNode(p->line_node_head, n0);
+    addLineNode(p->line_node_head, n0);
     inputFile = fopen(fileName, "r");
     if(inputFile == NULL)
     {
@@ -64,6 +83,7 @@ void read_assambely_lines(FILE *assemblyFile, dict_t **dict, params *p){
     }
 
     printf("%d", p->IC);
+    printf("%d", getByIndex(p->line_node_head, 2)->code);
 
 }
 
