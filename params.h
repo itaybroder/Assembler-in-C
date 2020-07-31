@@ -1,5 +1,5 @@
 #include "dataNode.h"
-#include "node.h"
+#include "node.c"
 enum opcode{
     MOV=0b000000000000000000000000,
     CMP=0b000001000000000000000000,
