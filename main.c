@@ -87,7 +87,8 @@ void read_assambely_lines(FILE *assemblyFile, dict_t **dict, params *p){
     }
 
     printf("%d", p->IC);
-    printf("%d", getByIndex(p->line_node_head, 2)->code);
+    line_node *temp = getByIndex(p->line_node_head, 1);
+    printf("%d", temp->code);
 
 }
 
