@@ -39,8 +39,8 @@ void handle_assembly_files(char fileName[]){
     n2->code = 0b10;
 
     addLineNode(p->line_node_head, n0);
-    addLineNode(p->line_node_head, n0);
-    addLineNode(p->line_node_head, n0);
+    addLineNode(p->line_node_head, n1);
+    addLineNode(p->line_node_head, n2);
     inputFile = fopen(fileName, "r");
     if(inputFile == NULL)
     {
