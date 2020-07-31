@@ -1,6 +1,7 @@
 #include "main.h"
 #include "dict.h"
 #include "params.h"
+#include "node.c"
 
 /*-------function prototype------*/
 void handle_assembly_files(char[]);
