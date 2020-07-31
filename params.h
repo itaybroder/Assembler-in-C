@@ -12,8 +12,8 @@ typedef struct params_struct {
     int IC;
     int DC;
 
-    line_node line_node_head;
-    data_node data_node_head;
+    line_node *line_node_head;
+    data_node *data_node_head;
 
 
     int data[100];
