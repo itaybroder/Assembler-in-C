@@ -17,6 +17,8 @@ params *init_params(){
     p->DC = 0;
     p->line_node_head = (line_node *)malloc(sizeof(line_node));
     p->data_node_head = (data_node *)malloc(sizeof(data_node));
+    p->line_node_head->next = NULL; 
+    p->data_node_head->next = NULL; 
     return p;
 }
 

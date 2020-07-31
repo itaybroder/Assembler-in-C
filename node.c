@@ -8,6 +8,7 @@ void addLineNode(line_node *head, line_node *node){
     }
     
     runner->next = node;
+    node->next = NULL;
 }
 
 line_node *getByIndex(line_node *head, int index){
