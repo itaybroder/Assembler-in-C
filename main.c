@@ -31,7 +31,7 @@ void handle_assembly_files(char fileName[]){
 
     line_node *n0 = (line_node *)malloc(sizeof(line_node));
     n0->code = 0b0;
-    line_node *n01 = (line_node *)malloc(sizeof(line_node));
+    line_node *n1 = (line_node *)malloc(sizeof(line_node));
     n1->code = 0b110;
     line_node *n2 = (line_node *)malloc(sizeof(line_node));
     n2->code = 0b10;
