@@ -1,0 +1,7 @@
+ERROR in file /Users/itay/Desktop/Examples/Example_4_WITH_ERROR/input.as in line 6: Invalid register number, register number should be btween 0 and 7
+ERROR in file /Users/itay/Desktop/Examples/Example_5_WITH_ERROR/input.as in line 17: invalid label name
+ERROR in file /Users/itay/Desktop/Examples/Example_5_WITH_ERROR/input.as in line 17: invalid label name
+ERROR in file /Users/itay/Desktop/Examples/Example_6_WITH_ERROR/input.as, in line 5: immidiate value, number must contain only digits and possibly a sign symbol in the beggining
+ERROR in file /Users/itay/Desktop/Examples/Example_7_WITH_ERROR/input.as in line 15: label not foud
+Error in file /Users/itay/Desktop/Examples/Example_8_WITH_ERROR/input.as in line 14, label already exists
+Program ended with exit code: 0
