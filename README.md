@@ -26,7 +26,7 @@
 
 <ol>
   <li>Clone the repository: <code>git clone &lt;https://github.com/itaybroder/Assembler-in-C&gt;</code></li>
-  <li>Navigate to the project directory: <code>cd assembler-project</code></li>
+  <li>Navigate to the project directory: <code>cd Assembler-in-C</code></li>
   <li>Compile the source code: <code>gcc -o assembler main.c assembler.c</code></li>
   <li>The assembler executable will be generated.</li>
 </ol>
