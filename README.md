@@ -1,9 +1,75 @@
-<h1 align="center">Hi 👋, I'm Itay</h1>
-<h3 align="center">A passionate frontend developer from israel</h3>
+<h1>Assembler Project</h1>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+<p>This is the readme file for the "Assembler" project developed for the university. The project is implemented in the C programming language and aims to provide an assembler for a specific architecture.</p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://www.electronjs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg" alt="electron" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://github.com/puppeteer/puppeteer" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg" alt="puppeteer" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> </p>
+<h2>Introduction</h2>
+
+<p>The Assembler project is designed to convert assembly language programs into machine code for a specific architecture. It takes assembly code as input and generates the corresponding machine code that can be executed on the target architecture.</p>
+
+<p>The project is implemented in C programming language and follows a modular approach for easy understanding and extensibility. It aims to provide a flexible and efficient solution for assembling assembly language programs.</p>
+
+<h2>Features</h2>
+
+<p>The Assembler project offers the following features:</p>
+
+<ol>
+  <li><strong>Parsing</strong>: The assembler parses assembly code to identify instructions, labels, and operands.</li>
+  <li><strong>Symbol Table</strong>: It maintains a symbol table to keep track of labels and their corresponding addresses.</li>
+  <li><strong>Code Generation</strong>: The assembler generates machine code by translating assembly instructions and resolving addresses.</li>
+  <li><strong>Error Handling</strong>: It provides comprehensive error handling and reporting for syntax errors, undefined labels, and other issues.</li>
+  <li><strong>Modularity</strong>: The codebase is designed with modularity in mind, allowing easy extensibility and future improvements.</li>
+</ol>
+
+<h2>Installation</h2>
+
+<p>To install and set up the Assembler project, follow these steps:</p>
+
+<ol>
+  <li>Clone the repository: <code>git clone &lt;repository_url&gt;</code></li>
+  <li>Navigate to the project directory: <code>cd assembler-project</code></li>
+  <li>Compile the source code: <code>gcc -o assembler main.c assembler.c</code></li>
+  <li>The assembler executable will be generated.</li>
+</ol>
+
+<h2>Usage</h2>
+
+<p>To use the Assembler project, follow these steps:</p>
+
+<ol>
+  <li>Prepare your assembly code in a text file, e.g., <code>input.asm</code>.</li>
+  <li>Run the assembler executable: <code>./assembler input.asm</code></li>
+  <li>The assembler will process the input file and generate the corresponding machine code.</li>
+  <li>If there are any errors or warnings, they will be displayed on the console.</li>
+  <li>The generated machine code can be found in the output file, which will have the same name as the input file but with a different extension, e.g., <code>input.obj</code>.</li>
+</ol>
+
+<h2>Examples</h2>
+
+<p>Here are a few examples to demonstrate the usage of the Assembler project:</p>
+
+<pre><code>; Example 1: Hello World
+section .data
+    message db "Hello, World!",0
+
+section .text
+    global _start
+
+_start:
+    ; write the message to stdout
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, message
+    mov edx, 13
+    int 0x80
+
+    ; exit the program
+    mov eax, 1
+    xor ebx, ebx
+    int 0x80
+</code></pre>
+
+<p>Save the above code in a file named <code>hello.asm</code> and assemble it using the Assembler project:</p>
+
+<pre><code>./assembler hello.asm</code></pre>
+
+<p>The generated machine code will be stored in the <code>hello.obj</code> file.</p>
